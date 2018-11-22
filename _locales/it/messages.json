@@ -228,7 +228,7 @@
         "description": "Options: User CSS headline"
     },
     "userCSSDesc": {
-        "message": "Inserire solo codice CSS! Clicca SALVA per attivare. BACKUP per memorizzare. Seleziona STANDARD nei TEMI, se vuoi usare un tema personale.",
+        "message": "Inserire solo codice CSS! Clicca SALVA per attivare. BACKUP per memorizzare. Seleziona STANDARD nei TEMI se vuoi usare un tema personale.",
         "description": "Options: User CSS placeholder/description"
     },
     "changelog": {
