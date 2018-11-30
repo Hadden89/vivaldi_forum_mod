@@ -9,16 +9,23 @@
     color: #fff !important;
 }
 #vivaldimenu a.current,#vivaldimenu a:hover {
-    color: #ef3939 !important;
+    color: #f15b5b !important;
 }
 #vivaldimenu ul {background-color: #2e3539;}
 #vivaldimenu ul a:hover {background: #333;}
-#vivaldimenu ul  li {border: transparent;}
+#vivaldimenu ul li {border: transparent;}
 #vivaldimenu ul li:hover {border: 1px solid;}
 #vivaldimenu a .sub-arrow {filter: invert(1);}
-#submenu ul {background-color: #2e3539; border: inherit;}
 #vivaldiheader {background :#2e3539;}
 #submenu {background-color: #2e3539;}
+#submenu li>a:active, #submenu li>a:focus {
+    color: #fff;
+    background-color: #cc0000;
+}
+#submenu li>a:hover {
+    color: #fff;
+    background-color: #4d585f;
+}
 #vivaldifooter a {color: #ffffff;}
 .emoji-tabs {background-color: #555;}
 .emoji-dialog .top-bar {
@@ -27,10 +34,6 @@
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff;
     background-color: #2e3539;
-}
-#submenu li>a:hover, #submenu li>a:focus {
-    color: #fff;
-    background-color: #555;
 }
 .chats-full [component="chat/nav-wrapper"] .chat-search input {
     border: white 1px solid; 
@@ -56,17 +59,20 @@
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
 	background-color: #4d585f;}
 
-.users-container {padding: 10;} /*invalid value!*/
-.users-box a > img {
+
+#content {padding-bottom: 0px;}
+.container {min-width: 99%;}
+code {color: lime; background-color: black;}
+.content pre {color: lime; background-color: black; border: none;}
+.markdown-highlight {background-color: inherit !important;}
+/*.users-container {padding: 10;}*/ /*invalid value!*/
+/*.users-box a > img {
     margin-bottom: -10px;
     margin-left: 10px;
 }
 .users-box .user-icon {
     margin-bottom: 10px;
-}
-#content {padding-bottom: 0px;}
-.container {min-width: 99%;}
-
+}*/
 /*** Sprucey Bonus Dark ***/
 
 html,
@@ -151,11 +157,11 @@ li[component="post"], .panel {
     background: #3d474c;
     position: relative !important;
     padding: 20px 10px !important;
-    border-bottom: 3px solid #999 !important;
+    /* border-bottom: 3px solid #999 !important; */
     border-top: none;
     border-right: none;
     border-left: none;
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
     border-radius: 5px !important;
 }
 small.pull-right a {
@@ -325,7 +331,7 @@ a.btn-register:hover, a.btn-login:hover, a.btn-register:focus, a.btn-login:focus
 
 
 /* Logo */
-
+/*
 .header .forum-logo {
     display: block;
     box-sizing: border-box;
@@ -334,7 +340,7 @@ a.btn-register:hover, a.btn-login:hover, a.btn-register:focus, a.btn-login:focus
     padding-left: 150px;
     background: url('chrome-extension://__MSG_@@extension_id__/themes/img/logo-white.png') no-repeat;
 }
-
+*/
 
 /* Various backgrounds */
 
