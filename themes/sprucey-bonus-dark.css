@@ -1,3 +1,72 @@
+/** Fixes for new forum layout **/
+#vivaldilogo {
+    background: url('chrome-extension://eadghjeogfohplgiihpljhingfechoek/themes/img/logo-white.png') no-repeat;
+}
+#vivaldilogo img {
+    display: none !important;
+}
+#vivaldimenu a,#vivaldimenu a:active,#vivaldimenu a:focus,#vivaldimenu a:hover {
+    color: #fff !important;
+}
+#vivaldimenu a.current,#vivaldimenu a:hover {
+    color: #ef3939 !important;
+}
+#vivaldimenu ul {background-color: #2e3539;}
+#vivaldimenu ul a:hover {background: #333;}
+#vivaldimenu ul  li {border: transparent;}
+#vivaldimenu ul li:hover {border: 1px solid;}
+#vivaldimenu a .sub-arrow {filter: invert(1);}
+#submenu ul {background-color: #2e3539; border: inherit;}
+#vivaldiheader {background :#2e3539;}
+#submenu {background-color: #2e3539;}
+#vivaldifooter a {color: #ffffff;}
+.emoji-tabs {background-color: #555;}
+.emoji-dialog .top-bar {
+    background: #555;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    background-color: #2e3539;
+}
+#submenu li>a:hover, #submenu li>a:focus {
+    color: #fff;
+    background-color: #555;
+}
+.chats-full [component="chat/nav-wrapper"] .chat-search input {
+    border: white 1px solid; 
+    background-color: #2e3539 !important;}
+.chats-full [component="chat/main-wrapper"] .alert {
+    color: #fff;
+    background-color: #4d585f;
+    border-color: #fff;  
+}
+.chats-full [component="chat/header"] {
+    background-color: #4d585f;
+}
+.chats-list > li.bg-info {background-color: #4d585f;}
+.chat-modal .chat-content li.chat-message .chat-user a,
+.expanded-chat .chat-content li.chat-message .chat-user a {color: #999;}
+
+.alert-info {
+    color: #fff;
+    background-color: #4d585f;
+    border: none;
+}
+.status.offline {color: #4d585f;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #4d585f;}
+
+.users-container {padding: 10;} /*invalid value!*/
+.users-box a > img {
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+.users-box .user-icon {
+    margin-bottom: 10px;
+}
+#content {padding-bottom: 0px;}
+.container {min-width: 99%;}
+
 /*** Sprucey Bonus Dark ***/
 
 html,
@@ -37,11 +106,16 @@ blockquote {
     background-color: #2e3539;
     border-left: 5px solid #d0d0d0;
 }
+blockquote pre {
+    color: #fff;
+    background-color: #2e3539;
+    border: none;
+}
 #content {
     background: #2e3539 !important;
     padding-top: 5px !important;
     border-radius: 10px !important;
-    border: 5px solid #4d585f!important;
+    border: /*5px*/ 3px solid #4d585f!important;
     box-shadow: 0px 0px 43px -6px rgba(0, 0, 0, 0.75);
 }
 .navbar-default {
@@ -560,9 +634,7 @@ span.timeago, a.permalink, a.permalink:active, a.permalink:focus {
 
 
 /*
-
 Railscasts-like style (c) Visoft, Inc. (Damien White)
-
 */
 
 .hljs {
@@ -571,100 +643,80 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
     padding: 0.5em;
     background: #121212 !important;
     color: #e6e1dc;
-  }
-
-  .hljs-comment,
-  .hljs-quote {
+}
+.hljs-comment,
+.hljs-quote {
     color: #bc9458;
     font-style: italic;
-  }
-
-  .hljs-keyword,
-  .hljs-selector-tag {
+}
+.hljs-keyword,
+.hljs-selector-tag {
     color: #c26230;
-  }
-
-  .hljs-string,
-  .hljs-number,
-  .hljs-regexp,
-  .hljs-variable,
-  .hljs-template-variable {
+}
+.hljs-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
     color: #a5c261;
-  }
-
-  .hljs-subst {
+}
+.hljs-subst {
     color: #519f50;
-  }
-
-  .hljs-tag,
-  .hljs-name {
+}
+.hljs-tag,
+.hljs-name {
     color: #e8bf6a;
-  }
-
-  .hljs-type {
+}
+.hljs-type {
     color: #da4939;
-  }
-
-
-  .hljs-symbol,
-  .hljs-bullet,
-  .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-attr,
-  .hljs-link {
+}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-link {
     color: #6d9cbe;
-  }
-
-  .hljs-params {
+}
+.hljs-params {
     color: #d0d0ff;
-  }
-
-  .hljs-attribute {
+}
+.hljs-attribute {
     color: #cda869;
-  }
-
-  .hljs-meta {
+}
+.hljs-meta {
     color: #9b859d;
-  }
-
-  .hljs-title,
-  .hljs-section {
+}
+.hljs-title,
+.hljs-section {
     color: #ffc66d;
-  }
-
-  .hljs-addition {
+}
+.hljs-addition {
     background-color: #144212;
     color: #e6e1dc;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .hljs-deletion {
+}
+.hljs-deletion {
     background-color: #600;
     color: #e6e1dc;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .hljs-selector-class {
+}
+.hljs-selector-class {
     color: #9b703f;
-  }
-
-  .hljs-selector-id {
+}
+.hljs-selector-id {
     color: #8b98ab;
-  }
-
-  .hljs-emphasis {
+}
+.hljs-emphasis {
     font-style: italic;
-  }
-
-  .hljs-strong {
+}
+.hljs-strong {
     font-weight: bold;
-  }
-
-  .hljs-link {
+}
+.hljs-link {
     text-decoration: underline;
-  }
+}
+.hljs-literal, .hljs-selector-pseudo {
+    color: #e6e1dc;
+}
 
 /* Advanced formatting mod */
 .vivaldi-mod-modal-box {
@@ -684,48 +736,4 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 }
 #toolbar-custom ul li:hover {
     background-color: #43494d;
-}
-
-/* Quick workaround for new forum */
-/** Hadden Workarounds **/
-#vivaldilogo {
-    background: url('chrome-extension://__MSG_@@extension_id__/themes/img/logo-white.png') no-repeat;
-}
-#vivaldilogo img {
-    display: none !important;
-}
-#vivaldiheader {background :#2e3539;}
-#submenu {background-color: #2e3539;}
-#vivaldifooter a {color: #ffffff;}
-.emoji-tabs {background-color: #555;}
-.emoji-dialog .top-bar {
-    background: #555;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #fff;
-    background-color: #2e3539;
-}
-#submenu li>a:hover, #submenu li>a:focus {
-    color: #fff;
-    background-color: #555;
-}
-.chats-full [component="chat/nav-wrapper"] .chat-search input {
-    border: white 1px solid; 
-    background-color: #2e3539 !important;}
-.chats-full [component="chat/main-wrapper"] .alert {
-    color: #fff;
-    background-color: #4d585f;
-    border-color: #fff;  
-}
-.chats-full [component="chat/header"] {
-    background-color: #4d585f;
-}
-.chats-list > li.bg-info {background-color: #4d585f;}
-.chat-modal .chat-content li.chat-message .chat-user a,
-.expanded-chat .chat-content li.chat-message .chat-user a {color: #999;}
-
-.alert-info {
-    color: #fff;
-    background-color: #4d585f;
-    border: none;
 }
