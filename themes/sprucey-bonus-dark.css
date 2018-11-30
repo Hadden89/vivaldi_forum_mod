@@ -8,6 +8,9 @@
 #vivaldimenu a,#vivaldimenu a:active,#vivaldimenu a:focus,#vivaldimenu a:hover {
     color: #fff !important;
 }
+#vivaldimenu a.current {
+    text-shadow: 1px 1px 1px  #cc0000 !important;
+}
 #vivaldimenu a.current,#vivaldimenu a:hover {
     color: #f15b5b !important;
 }
