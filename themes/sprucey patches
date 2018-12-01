@@ -1,0 +1,54 @@
+/** Testing them, using 29/11 as base **/
+
+.account .profile .profile-meta strong { /*Fix userpage text*/
+	color: #fff;
+}
+
+/*Full chat fix*/
+.chats-full [component="chat/nav-wrapper"] .chat-search input {
+    /*border: white 1px solid;*/ 
+    background-color: #2e3539 !important;}
+.chats-full [component="chat/main-wrapper"] .alert {
+    color: #fff;
+    background-color: #4d585f;
+    border-color: #fff;  
+}
+.chats-full [component="chat/header"] {
+    background-color: #4d585f;
+}
+.chats-list > li.bg-info {background-color: #4d585f;}
+.chat-modal .chat-content li.chat-message .chat-user a,
+.expanded-chat .chat-content li.chat-message .chat-user a {color: #999;}
+
+blockquote pre { /*improved code blocks*/
+    color: #fff;
+    background-color: #2e3539;
+    border: none;
+}
+code {
+	color: lime;
+	background-color: black;
+}
+.content pre {
+	color: lime;
+	background-color: black;
+	border: none;
+}
+
+.markdown-highlight {background-color: inherit !important;}
+.topic .posts .content .toggle {background: #2e3539;}
+
+#vivaldilogo { /*New logo code*/
+    background: url('chrome-extension://eadghjeogfohplgiihpljhingfechoek/themes/img/logo-white.png') no-repeat;
+}
+#vivaldilogo img {
+    display: none !important;
+}
+
+#vivaldimenu a .sub-arrow::after { /*will replace invert*/
+    color: var(--colorFg) !important;
+}
+
+.topic .content { /*fix misplaced posts*/
+  margin: auto;
+}	
