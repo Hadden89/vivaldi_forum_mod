@@ -20,6 +20,3 @@
 #vivaldimenu ul li:hover {
 	border-left: 0.5px solid #fff;
 }
-#vivaldimenu a .sub-arrow::after { /*will replace invert*/
-    color: var(--colorFg) !important;
-}
