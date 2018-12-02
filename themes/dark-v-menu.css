@@ -1,4 +1,5 @@
-/* This should fix the awkard issue with border in help (header) */
+/* Better test it as custom code */
+
 #vivaldimenu a,#vivaldimenu a:active,#vivaldimenu a:focus,#vivaldimenu a:hover {
     color: #fff !important;
 }
