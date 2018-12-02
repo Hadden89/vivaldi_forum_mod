@@ -46,4 +46,9 @@ code {
 }
 .topic .content { /*fix misplaced posts*/
   margin: auto;
-}	
+}
+.topic .posts .content .toggle  {background: #2e3539;} /*Spoiler arrow*/
+.alert-warning { /*upload box*/
+	color: #fff;
+	background: #2e3539;
+} 
