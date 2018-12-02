@@ -1,0 +1,25 @@
+/* This should fix the awkard issue with border in help (header) */
+#vivaldimenu a,#vivaldimenu a:active,#vivaldimenu a:focus,#vivaldimenu a:hover {
+    color: #fff !important;
+}
+#vivaldimenu a.current {
+    text-shadow: 1px 1px 1px  #cc0000 !important;
+}
+#vivaldimenu a.current,#vivaldimenu a:hover {
+    color: #f15b5b !important;
+}
+#vivaldimenu ul {background-color: #2e3539;}
+#vivaldimenu ul a:hover:nth-child(1) { 
+	border-left: 1px solid #fff; /*workaround*/
+}
+#vivaldimenu ul a:hover { /*on help takes 2px of border*/
+	background: #333;
+	border-left: 0.5px solid #fff;
+}
+#vivaldimenu ul li {border: transparent;}
+#vivaldimenu ul li:hover {
+	border-left: 0.5px solid #fff;
+}
+#vivaldimenu a .sub-arrow::after { /*will replace invert*/
+    color: var(--colorFg) !important;
+}
