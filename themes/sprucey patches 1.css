@@ -52,3 +52,9 @@ code {
 	color: #fff;
 	background: #2e3539;
 } 
+
+/*These two are divergent from sprucey overall theme*/
+/*
+#content {padding-bottom: 0px;}
+.container {min-width: 99%;}
+*/
