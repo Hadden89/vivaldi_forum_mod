@@ -1,0 +1,109 @@
+/* Mod header */
+#vivaldiheader {
+  background: #2e3539;
+  border-bottom: none !important;
+}
+#vivaldiheader a,
+#vivaldiheader a:active,
+#vivaldiheader a:focus,
+#vivaldiheader a:visited {
+  color: #fff !important;
+}
+/*#vivaldimenu a.current {
+  color: #f15b5b !important;
+#vivaldimenu a:hover {
+  color: #f15b5b !important;
+}*/
+
+#vivaldimenu ul a:hover {
+  background: rgba(255, 0, 0, 0.5);
+}
+#submenu a:focus,
+#submenu a:hover,
+#submenu li.active>a {
+  background-color: rgba(255, 0, 0, 0.35);
+}
+
+/* Increase container (more room) */
+.container {width: 99% !important;}
+
+/* Reduced border */
+#content {
+  border: 3px solid !important;
+  margin-top: 0px;
+}
+
+/* Compact threads */
+li[component="post"] {
+  border-bottom: 1px solid !important;
+  border-radius: 0px !important;
+  margin-bottom: 1px !important;
+}
+
+/* Less gray text */
+.breadcrumb>.active,
+.stats small {color: #adb3b8;}
+.help-block {color: #f2f2f2;}
+
+/* Fix invisible time ago */
+.account .profile .profile-meta strong {
+  color: #fff;
+}
+/* Brigther red text */
+span.timeago {color: #d09599 !important;}
+
+/* Hide >all< deleted posts */
+li.deleted {display: none;} 
+
+/* Fix an "awkard blue" issue */
+.posts-list .posts-list-item .topic-title {
+  color: #d0d0d0;
+}
+
+/* Code Block tweaks */
+code {color: #00ff17; background-color: #2e3539;}
+pre {
+  color: #00ff17; 
+  background-color: #2e3539;
+  border: none;
+}
+
+/* Colored up/down buttons */
+.topic [component="post/upvote"].upvoted {
+  background-color: #009e00 !important;
+}
+.topic [component="post/downvote"].downvoted {
+  background-color: red !important;
+}
+
+/* Spoiler arrow */
+.topic .posts .content .toggle {
+  background: #2e3539 !important;
+} 
+ 
+/* Awkard height in composer */
+.composer .title-container .title {
+  font-size: 15px;
+  height: 31px;
+} 
+
+/* Brighter buttons */ 
+.composer .formatting-bar .formatting-group li  {
+  color: #fff;
+} 
+
+/* PostFix (theme already has this) */
+.btn {padding: 5px 8px !important;}
+
+/* Input border is bad here */
+.bootstrap-tagsinput input,
+.bootstrap-tagsinput input:focus {
+  border: none !important;
+}
+
+#vivaldimenu a .sub-arrow::after {
+  color: #fff !important;
+}
+
+/*BetterNotificationBox*/
+p.notification {background-color: darkgray;}
