@@ -1,3 +1,4 @@
+
 /** Mod Header + Submenu **/
 #vivaldiheader {
   background: #2e3539;
@@ -15,7 +16,8 @@
   color: #f15b5b !important;
 }*/
 
-/*#vivaldimenu a.has-submenu, #vivaldimenu a:active.has-submenu,*/ #vivaldimenu a:focus.has-submenu, #vivaldimenu a:hover.has-submenu {
+/*#vivaldimenu a.has-submenu, #vivaldimenu a:active.has-submenu,*/
+#vivaldimenu a:focus.has-submenu, #vivaldimenu a:hover.has-submenu {
   text-shadow: 1px 1px 1px  #cc0000 !important;;
 }
 
