@@ -1,4 +1,4 @@
-/* Mod header */
+/** Mod Header + Submenu **/
 #vivaldiheader {
   background: #2e3539;
   border-bottom: none !important;
@@ -15,8 +15,15 @@
   color: #f15b5b !important;
 }*/
 
+/*#vivaldimenu a.has-submenu, #vivaldimenu a:active.has-submenu,*/ #vivaldimenu a:focus.has-submenu, #vivaldimenu a:hover.has-submenu {
+  text-shadow: 1px 1px 1px  #cc0000 !important;;
+}
+
 #vivaldimenu ul a:hover {
   background: rgba(255, 0, 0, 0.5);
+}
+#vivaldimenu a .sub-arrow::after {
+  color: #fff !important;
 }
 #submenu a:focus,
 #submenu a:hover,
@@ -24,43 +31,28 @@
   background-color: rgba(255, 0, 0, 0.35);
 }
 
-/* Increase container (more room) */
-.container {width: 99% !important;}
-
-/* Reduced border */
-#content {
-  border: 3px solid !important;
-  margin-top: 0px;
-}
-
-/* Compact threads */
-li[component="post"] {
-  border-bottom: 1px solid !important;
-  border-radius: 0px !important;
-  margin-bottom: 1px !important;
-}
+/** Color tweaks **/
 
 /* Less gray text */
 .breadcrumb>.active,
 .stats small {color: #adb3b8;}
 .help-block {color: #f2f2f2;}
 
-/* Fix invisible time ago */
-.account .profile .profile-meta strong {
+/* Fix time ago */
+.account .profile .profile-meta strong,
+small.timeago {
   color: #fff;
 }
+
 /* Brigther red text */
 span.timeago {color: #d09599 !important;}
 
-/* Hide >all< deleted posts */
-li.deleted {display: none;} 
-
-/* Fix an "awkard blue" issue */
+/* If topic title has "awkard" colors */
 .posts-list .posts-list-item .topic-title {
   color: #d0d0d0;
 }
 
-/* Code Block tweaks */
+/* Code block tweaks (darker) */
 code {color: #00ff17; background-color: #2e3539;}
 pre {
   color: #00ff17; 
@@ -73,27 +65,102 @@ pre {
   background-color: #009e00 !important;
 }
 .topic [component="post/downvote"].downvoted {
-  background-color: red !important;
+  background-color: #b30000 !important;
 }
+
+/* Brighter composer buttons */ 
+.composer .formatting-bar .formatting-group li  {
+  color: #fff;
+} 
 
 /* Spoiler arrow */
 .topic .posts .content .toggle {
   background: #2e3539 !important;
 } 
+/* Better contrast text */
+.chats-full [component="chat/nav-wrapper"] .chat-search input {color: #fff !important;}
+.form-control {color: #fff !important;}
+
+/*BetterNotificationBox*/
+p.notification {
+  color: #fff;
+  /*background-color: darkgray;*/
+}
+
+.nav-pills>li.active>a {
+  background-color: #4d585f;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  color: #fff;
+  background-color: #2e3539;
+}
+
+.alert-window .alert {color: #fff;}
+.alert-dismissable .close {color: #fff;} 
+.btn-link {color: #fff;}
+.btn-link:focus, .btn-link:hover {
+  color: #e6e6e6;
+}
+
+/* Emoji box fix */
+.emoji-tabs {background-color: #555;}
+.emoji-dialog .top-bar {
+  background: #555;
+}
+
+/* Transparent send button */
+.btn-primary[data-action=send] {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Test */
+.breadcrumb .fa {color: #dd8108;}
+
+/* Fix invisible emojis */
+img.not-responsive.emoji.emoji-emoji-one.emoji--female_sign,
+img.not-responsive.emoji.emoji-emoji-one.emoji--male_sign,
+img.not-responsive.emoji.emoji-emoji-one.emoji--medical_symbol,
+img.not-responsive.emoji.emoji-emoji-one.emoji--old_key {filter: invert(1);}
+
+/** Size tweaks **/
+
+/* Increase container (more room) */
+.container {width: 99% !important;}
+
+/* If theme border is too thick */
+#content {
+  border: 3px solid !important;
+  margin-top: 0px;
+}
+
+/* Compact threads */
+li[component="post"] {
+  border-bottom: 1px solid !important;
+  border-radius: 0px !important;
+  margin-bottom: 1px !important;
+}
+
+/* Hide >all< deleted posts */
+li.deleted {display: none;} 
  
-/* Awkard height in composer */
+/* Awkard height */
 .composer .title-container .title {
   font-size: 15px;
   height: 31px;
 } 
 
-/* Brighter buttons */ 
-.composer .formatting-bar .formatting-group li  {
-  color: #fff;
-} 
+/* Fix composer */
+.composer .title-container .title {
+  height: 21px;
+  padding-top: 0px;
+}
+.composer .formatting-bar {
+  margin-top: 10px;
+}
 
-/* PostFix (theme already has this) */
-.btn {padding: 5px 8px !important;}
+/* PostFix (probably NOT need) */
+.btn {padding: 0 !important;}
 
 /* Input border is bad here */
 .bootstrap-tagsinput input,
@@ -101,9 +168,13 @@ pre {
   border: none !important;
 }
 
-#vivaldimenu a .sub-arrow::after {
-  color: #fff !important;
+/* Less margin */
+.row  {margin-bottom: -13px !important;}
+
+/* Test */
+.btn.btn-default.dropdown-toggle {
+  height: 20px !important;
 }
 
-/*BetterNotificationBox*/
-p.notification {background-color: darkgray;}
+/* Tags input fix */
+.bootstrap-tagsinput {margin-top: 3ex !important;}
