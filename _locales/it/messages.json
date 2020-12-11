@@ -325,11 +325,11 @@
     },
     "undoMoji": {
         "message": "Preferisci emoji native",
-        "description": "Mod: turn emoji images back into native text (I've changed the translation to "prefer OS [native] emojis. Seems clearer"
+        "description": "Mod: turn emoji images back into native text"
     },
     "customEmoteTitle": {
         "message": "Emoji utente",
-        "description": "Custom emotes section title (I think emoji is better as a plural is not common, also -user emoji- is shorter in translations)"
+        "description": "Custom emotes section title"
     },
     "customEmoteReset": {
         "message": "Resetta emoji",
