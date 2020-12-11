@@ -255,14 +255,10 @@
         "message": "Annulla",
         "description": "Options: Text to show on a button that performs some sort of cancel operation"
     },
-    "cancelImport": {
-        "message": "Importazione annullata.",
-        "description": "Options: Status message after cancelled import"
-    },
     "export": {
         "message": "Esporta",
         "description": "Options: Text to show on a button that performs some sort of export operation"
-    },
+    },	
     "reset": {
         "message": "Reset",
         "description": "Options: Text to show on a button that performs some sort of reset operation."
@@ -274,6 +270,10 @@
     "cancelReset": {
         "message": "Reset annullato.",
         "description": "Options: Status message when reset is cancelled"
+    },
+	"cancelImport": {
+        "message": "Importazione annullata.",
+        "description": "Options: Status message after cancelled import"
     },
     "optionsReset": {
         "message": "Opzioni resettate, archiviazione ripulita.",
@@ -318,5 +318,41 @@
     "statusInfo": {
         "message": "Un grande ringraziamento a tutti gli utenti e ai collaboratori!",
         "description": "Options: Status message info"
+    },
+	"linkBugs": {
+        "message": "Converti VB in link Jira",
+        "description": "Mod: add bug links"
+    },
+    "undoMoji": {
+        "message": "Preferisci emoji native",
+        "description": "Mod: turn emoji images back into native text (I've changed the translation to "prefer OS [native] emojis. Seems clearer"
+    },
+    "customEmoteTitle": {
+        "message": "Emoji utente",
+        "description": "Custom emotes section title (I think emoji is better as a plural is not common, also -user emoji- is shorter in translations)"
+    },
+    "customEmoteReset": {
+        "message": "Resetta emoji",
+        "description": "Custom emotes reset button text. shows on button."
+    },
+    "customEmoteTopic": {
+        "message": "Carica dal forum",
+        "description": "Custom emotes button load from forum topic"
+    },
+    "customEmoteResetMsg": {
+        "message": "Rimuovere tutte le emoji inserite?",
+        "description": "Custom emotes reset confirmation message. shows in a confirm()"
+    },
+    "customEmoteTopicId": {
+        "message": "ID argomento",
+        "description": "Custom emotes input field label for the topic id"
+    },
+    "customEmoteFirstRun": {
+        "message": "Emoji personali non caricate. Vai nelle impostazioni e resettale.",
+        "description": "Message shown on first run if emotes were not added properly."
+    },
+    "storageUse": {
+        "message": "Archiviazione usata dal custom.css e dalle emoji: ",
+        "description": "Label for storage monitor. Appears next to a progress bar"
     }
 }
